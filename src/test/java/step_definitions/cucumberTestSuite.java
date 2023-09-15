@@ -12,5 +12,5 @@ import org.junit.runner.RunWith;
         plugin= {"pretty","html:target/site/cucumber-pretty","json:target/cucumber/cucumber.json"}
 )
 
-public class CucumberTestSuite {
+public class cucumberTestSuite {
 }

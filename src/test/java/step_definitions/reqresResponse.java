@@ -1,6 +1,6 @@
 package step_definitions;
 
-public class ReqresResponse {
+public class reqresResponse {
     public static String EMAIL = "data.email";
     public static String FNAME = "data.first_name";
 
