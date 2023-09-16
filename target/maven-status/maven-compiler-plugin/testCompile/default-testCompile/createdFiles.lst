@@ -1,3 +1,5 @@
-step_definitions/WeatherAPI.class
-step_definitions/CucumberTestSuite.class
-step_definitions/GETStepdefs.class
+step_definitions/cucumberTestSuite.class
+step_definitions/reqresResponse.class
+step_definitions/GET/getStepdef.class
+Utils/Constant.class
+step_definitions/reqresStatusCode.class

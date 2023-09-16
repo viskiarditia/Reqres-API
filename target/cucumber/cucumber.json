@@ -3,32 +3,32 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2023-06-15T12:54:48.484Z",
-        "line": 4,
-        "name": "Get current weather",
+        "start_timestamp": "2023-09-15T10:42:04.399Z",
+        "line": 5,
+        "name": "Get LIST USER",
         "description": "",
-        "id": "testing-api-get-jojonomic;get-current-weather",
+        "id": "testing-api---get;get-list-user",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 2440355000,
+              "duration": 1381315000,
               "status": "passed"
             },
-            "line": 5,
-            "name": "User Set Paramater API Current Weather",
+            "line": 6,
+            "name": "User Set Paramater API reqres get LIST USERS",
             "match": {
-              "location": "step_definitions.GETStepdefs.userSetParamaterAPICurrentWeather()"
+              "location": "step_definitions.GET.getStepdef.userSetParamaterAPIReqresGetLISTUSERS()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 16062000,
+              "duration": 13510000,
               "status": "passed"
             },
-            "line": 6,
+            "line": 7,
             "name": "Status Code Should be 200 OK",
             "match": {
               "arguments": [
@@ -37,56 +37,59 @@
                   "offset": 22
                 }
               ],
-              "location": "step_definitions.GETStepdefs.statusCodeShouldBeOK(int)"
+              "location": "step_definitions.reqresStatusCode.statusCodeShouldBeOK(int)"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 172839000,
+              "duration": 133681000,
               "status": "passed"
             },
-            "line": 7,
-            "name": "Validate GET Current Weather json schema",
+            "line": 8,
+            "name": "Validate get LIST USERS json schema",
             "match": {
-              "location": "step_definitions.GETStepdefs.validateGETCurrentWeatherJsonSchema()"
+              "location": "step_definitions.GET.getStepdef.validateGetLISTUSERSJsonSchema()"
             },
             "keyword": "And "
           }
         ],
         "tags": [
+          {
+            "name": "@REQRES"
+          },
           {
             "name": "@GET"
           }
         ]
       },
       {
-        "start_timestamp": "2023-06-15T12:54:51.200Z",
-        "line": 9,
-        "name": "Get forecast weather",
+        "start_timestamp": "2023-09-15T10:42:06.044Z",
+        "line": 10,
+        "name": "Get SINGLE USER",
         "description": "",
-        "id": "testing-api-get-jojonomic;get-forecast-weather",
+        "id": "testing-api---get;get-single-user",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 933853000,
+              "duration": 102322000,
               "status": "passed"
             },
-            "line": 10,
-            "name": "Set Paramater Forecast Weather",
+            "line": 11,
+            "name": "User Set Paramater API reqres get SINGLE USER",
             "match": {
-              "location": "step_definitions.GETStepdefs.setParamaterForecastWeather()"
+              "location": "step_definitions.GET.getStepdef.userSetParamaterAPIReqresGetSINGLEUSER()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 1789000,
+              "duration": 1023000,
               "status": "passed"
             },
-            "line": 11,
+            "line": 12,
             "name": "Status Code Should be 200 OK",
             "match": {
               "arguments": [
@@ -95,42 +98,358 @@
                   "offset": 22
                 }
               ],
-              "location": "step_definitions.GETStepdefs.statusCodeShouldBeOK(int)"
+              "location": "step_definitions.reqresStatusCode.statusCodeShouldBeOK(int)"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 12038000,
+              "duration": 3304000,
               "status": "passed"
             },
-            "line": 12,
-            "name": "Validate GET forecast Weather json schema",
+            "line": 13,
+            "name": "Validate get SINGLE USER json schema",
             "match": {
-              "location": "step_definitions.GETStepdefs.validateGETForecastWeatherJsonSchema()"
+              "location": "step_definitions.GET.getStepdef.validateGetSINGLEUSERJsonSchema()"
             },
             "keyword": "And "
           }
         ],
         "tags": [
           {
+            "name": "@REQRES"
+          },
+          {
+            "name": "@GET"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-09-15T10:42:06.157Z",
+        "line": 15,
+        "name": "Get SINGLE USER NOT FOUND",
+        "description": "",
+        "id": "testing-api---get;get-single-user-not-found",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 452952000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User Set Paramater API reqres get SINGLE USER NOT FOUND",
+            "match": {
+              "location": "step_definitions.GET.getStepdef.userSetParamaterAPIReqresGetSINGLEUSERNOTFOUND()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3285000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "Status Code Should be 404 Not_Found",
+            "match": {
+              "arguments": [
+                {
+                  "val": "404",
+                  "offset": 22
+                }
+              ],
+              "location": "step_definitions.reqresStatusCode.statusCodeShouldBeNot_Found(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 4360000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "Validate get SINGLE USER NOT FOUND json schema",
+            "match": {
+              "location": "step_definitions.GET.getStepdef.validateGetSINGLEUSERNOTFOUNDJsonSchema()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@REQRES"
+          },
+          {
+            "name": "@GET"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-09-15T10:42:06.630Z",
+        "line": 20,
+        "name": "Get LIST \u003cRESOURCE\u003e",
+        "description": "",
+        "id": "testing-api---get;get-list-\u003cresource\u003e",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 124458000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "User Set Paramater API reqres get LIST RESOURCE",
+            "match": {
+              "location": "step_definitions.GET.getStepdef.userSetParamaterAPIReqresGetLISTRESOURCE()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1287000,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "Status Code Should be 200 OK",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 22
+                }
+              ],
+              "location": "step_definitions.reqresStatusCode.statusCodeShouldBeOK(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2418000,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "Validate get LIST RESOURCE json schema",
+            "match": {
+              "location": "step_definitions.GET.getStepdef.validateGetLISTRESOURCEJsonSchema()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@REQRES"
+          },
+          {
+            "name": "@GET"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-09-15T10:42:06.766Z",
+        "line": 25,
+        "name": "Get SINGLE \u003cRESOURCE\u003e",
+        "description": "",
+        "id": "testing-api---get;get-single-\u003cresource\u003e",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 89545000,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "User Set Paramater API reqres get SINGLE RESOURCE",
+            "match": {
+              "location": "step_definitions.GET.getStepdef.userSetParamaterAPIReqresGetSINGLERESOURCE()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1375000,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "Status Code Should be 200 OK",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 22
+                }
+              ],
+              "location": "step_definitions.reqresStatusCode.statusCodeShouldBeOK(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3641000,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "Validate get SINGLE RESOURCE json schema",
+            "match": {
+              "location": "step_definitions.GET.getStepdef.validateGetSINGLERESOURCEJsonSchema()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@REQRES"
+          },
+          {
+            "name": "@GET"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-09-15T10:42:06.867Z",
+        "line": 30,
+        "name": "Get SINGLE \u003cRESOURCE\u003e NOT FOUND",
+        "description": "",
+        "id": "testing-api---get;get-single-\u003cresource\u003e-not-found",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 471327000,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "User Set Paramater API reqres get SINGLE RESOURCE NOT FOUND",
+            "match": {
+              "location": "step_definitions.GET.getStepdef.userSetParamaterAPIReqresGetSINGLERESOURCENOTFOUND()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3439000,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "Status Code Should be 404 Not_Found",
+            "match": {
+              "arguments": [
+                {
+                  "val": "404",
+                  "offset": 22
+                }
+              ],
+              "location": "step_definitions.reqresStatusCode.statusCodeShouldBeNot_Found(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 5186000,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "Validate get SINGLE RESOURCE NOT FOUND json schema",
+            "match": {
+              "location": "step_definitions.GET.getStepdef.validateGetSINGLERESOURCENOTFOUNDJsonSchema()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@REQRES"
+          },
+          {
+            "name": "@GET"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-09-15T10:42:07.359Z",
+        "line": 35,
+        "name": "Get DELAYED RESPONSE",
+        "description": "",
+        "id": "testing-api---get;get-delayed-response",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3446842000,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "User Set Paramater API reqres get DELAYED RESPONSE",
+            "match": {
+              "location": "step_definitions.GET.getStepdef.userSetParamaterAPIReqresGetDELAYEDRESPONSE()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2104000,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "Status Code Should be 200 OK",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 22
+                }
+              ],
+              "location": "step_definitions.reqresStatusCode.statusCodeShouldBeOK(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 15535000,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "Validate get DELAYED RESPONSE json schema",
+            "match": {
+              "location": "step_definitions.GET.getStepdef.validateGetDELAYEDRESPONSEJsonSchema()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@REQRES"
+          },
+          {
             "name": "@GET"
           }
         ]
       }
     ],
-    "name": "Testing API GET Jojonomic",
+    "name": "Testing API - GET",
     "description": "",
-    "id": "testing-api-get-jojonomic",
+    "id": "testing-api---get",
     "keyword": "Feature",
     "uri": "classpath:features//GET.feature",
     "tags": [
+      {
+        "name": "@REQRES",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      },
       {
         "name": "@GET",
         "type": "Tag",
         "location": {
           "line": 1,
-          "column": 1
+          "column": 9
         }
       }
     ]

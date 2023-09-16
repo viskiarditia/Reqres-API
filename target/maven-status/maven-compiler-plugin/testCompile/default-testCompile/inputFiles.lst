@@ -1,3 +1,5 @@
-/Users/fizkiarditiakusuma/Downloads/Test_Jojonomic_Fizki-Arditia-Kusuma_APIAUTO/src/test/java/step_definitions/GETStepdefs.java
-/Users/fizkiarditiakusuma/Downloads/Test_Jojonomic_Fizki-Arditia-Kusuma_APIAUTO/src/test/java/step_definitions/CucumberTestSuite.java
-/Users/fizkiarditiakusuma/Downloads/Test_Jojonomic_Fizki-Arditia-Kusuma_APIAUTO/src/test/java/step_definitions/WeatherAPI.java
+/Users/fizkiarditiakusuma/Downloads/Reqres-API/src/test/java/step_definitions/reqresResponse.java
+/Users/fizkiarditiakusuma/Downloads/Reqres-API/src/test/java/step_definitions/reqresStatusCode.java
+/Users/fizkiarditiakusuma/Downloads/Reqres-API/src/test/java/step_definitions/cucumberTestSuite.java
+/Users/fizkiarditiakusuma/Downloads/Reqres-API/src/test/java/step_definitions/GET/getStepdef.java
+/Users/fizkiarditiakusuma/Downloads/Reqres-API/src/test/java/Utils/Constant.java

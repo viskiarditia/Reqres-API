@@ -37,5 +37,3 @@ Feature: Testing API - GET
     Then Status Code Should be 200 OK
     And Validate get DELAYED RESPONSE json schema
 
- #Negative Case
-

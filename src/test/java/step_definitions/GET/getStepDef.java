@@ -8,8 +8,8 @@ import net.serenitybdd.rest.SerenityRest;
 
 import java.io.File;
 
-public class getStepdef {
-
+public class getStepDef {
+    // Positive Case
     //GET LIST USER
     @Given("User Set Paramater API reqres get LIST USERS")
     public void userSetParamaterAPIReqresGetLISTUSERS() {
@@ -103,4 +103,5 @@ public class getStepdef {
                 .assertThat()
                 .body(JsonSchemaValidator.matchesJsonSchema(jsonSchemaValidator));
     }
+
 }
